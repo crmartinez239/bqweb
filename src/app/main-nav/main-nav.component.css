@@ -1,0 +1,20 @@
+.top-box {
+    background-color: black;
+    height: 8vh;
+    color: orangered;
+    display: flex;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.navbox {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 2;
+    align-self: flex-end;
+}
