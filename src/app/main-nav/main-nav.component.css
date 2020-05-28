@@ -18,3 +18,23 @@
     flex-grow: 2;
     align-self: flex-end;
 }
+
+.nav-button {
+    padding: 5px;
+    font-size: large; 
+    color: orangered;
+    border-left: 1px solid orangered;
+    border-top: 1px solid orangered;
+    text-decoration: none;
+}
+
+.nav-button-last {
+    margin-right: 5px;
+    border-right: 1px solid orangered;
+}
+
+.nav-button:focus {
+    outline-width: 0;
+    background-color: orangered;
+    color: black;
+}

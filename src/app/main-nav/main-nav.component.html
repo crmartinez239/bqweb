@@ -1,16 +1,8 @@
 <div class="top-box">
     <img class="logo" src="../../assets/bq.png" alt="BurgerQue">
     <div class="navbox">
+        <a routerLink="/neworder" class="nav-button">New Order</a>
+        <a routerLink="/orders" class="nav-button nav-button-last">View Orders</a>
 
-        <button mat-button [matMenuTriggerFor]="orderMenu">Orders</button>
-        <mat-menu #orderMenu="matMenu">
-            <button routerLink="/neworder" mat-menu-item>New Order</button>
-            <button routerLink="/orders" mat-menu-item>View Orders</button>
-        </mat-menu>
-
-        <button mat-button [matMenuTriggerFor]="messageMenu">Messages</button>
-        <mat-menu #messageMenu="matMenu">
-
-        </mat-menu>
     </div>    
 </div>

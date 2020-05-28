@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Order } from '../models/Order';
+import { NewOrder } from '../models/NewOrder';
 
 @Component({
   selector: 'app-new-order',
@@ -7,8 +7,11 @@ import { Order } from '../models/Order';
   styleUrls: ['./new-order.component.css']
 })
 export class NewOrderComponent implements OnInit {
-  order: Order;
+  order: NewOrder;
+  orderTypes = ['Delivery', 'Pick-up'];
+  submitted = false;
 
+  onSubmit() {this.submitted = true;}
   constructor() { }
 
   ngOnInit(): void {
