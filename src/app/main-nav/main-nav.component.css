@@ -33,8 +33,23 @@
     border-right: 1px solid orangered;
 }
 
-.nav-button:focus {
-    outline-width: 0;
+.nav-button-selected {
+    padding: 5px;
+    font-size: large;
     background-color: orangered;
     color: black;
+    border-left: 1px solid orangered;
+    border-top: 1px solid orangered;
+    text-decoration: none;
+}
+
+.nav-button:focus {
+    outline-width: 0;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    margin-bottom: 5px;
+    /* align-self: center; */
 }

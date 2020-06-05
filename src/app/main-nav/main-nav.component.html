@@ -1,8 +1,11 @@
 <div class="top-box">
     <img class="logo" src="../../assets/bq.png" alt="BurgerQue">
     <div class="navbox">
-        <a routerLink="/neworder" class="nav-button">New Order</a>
-        <a routerLink="/orders" class="nav-button nav-button-last">View Orders</a>
-
+        <a routerLink="/neworder" 
+        [ngClass]="{'nav-button': currentTab != 1, 'nav-button-selected': currentTab === 1}"
+        (click)="tabclick(1)">New Order</a>
+        <a routerLink="/orders" class="nav-button-last"
+        [ngClass]="{'nav-button': currentTab != 2, 'nav-button-selected': currentTab === 2}"
+        (click)="tabclick(2)">View Orders</a>
     </div>    
 </div>

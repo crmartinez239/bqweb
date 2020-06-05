@@ -1,0 +1,44 @@
+.view-wrapper {
+    margin-top: 25px;
+    display:  flex;
+    flex-direction: column;
+}
+
+
+.clear-button {
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+  
+td {
+    border: 1px solid black;
+    padding: .5rem 2rem;
+    text-align: left;
+    color: black
+}
+
+.td-extra {
+    background-color: black;
+    border-bottom: 1px solid orangered;
+}
+.td-extra:nth-last-child() {
+    border-bottom: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    border-right: 1px solid orangered;
+    padding: .5rem 2rem;
+    text-align: left;
+    background-color: black;
+    color: orangered;
+}
+
+th:last-child {
+    border-right: 1px solid black;
+}

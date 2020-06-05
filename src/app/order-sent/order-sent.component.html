@@ -1,0 +1,8 @@
+<div *ngIf="!orderAccepted">
+    <p>Waiting for order to be accepted.</p>
+    <div class="loader"></div>
+</div>
+
+<div *ngIf="orderAccepted">
+    <h3>The order was accepted!</h3>
+</div>

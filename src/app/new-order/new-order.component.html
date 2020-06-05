@@ -1,9 +1,21 @@
 <div class="flex-wrapper">
-    <form>
-        <div class="a">
-            <label>Name
-                <input type="text" class="form-control" required>
+    <!-- <form> -->
+        <div class="form-wrapper">
+            <label>Type
+                <br>
+                <select [(ngModel)]="currentOrderType" >
+                    <option value="0">Delivery</option>
+                    <option value="1">Pick-Up</option>
+                </select>
             </label>
+            <br>
+
+            <label>Name
+                <input [(ngModel)]="currentOrderName" type="text" class="form-control">
+            </label>
+            <br>
+            <p *ngIf="invalidForm" class="error-text">{{ responseMessage }}</p>
+            <button (click)="createOrder()" class="order-button">Create Order</button>
         </div>
-    </form>
+    <!-- </form> -->
 </div>

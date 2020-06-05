@@ -1,0 +1,20 @@
+<div class="view-wrapper">
+<div>
+    <button (click)="clearOrders()" class="clear-button">Clear Orders</button>
+</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let o of orders">
+            <td>{{ o.name }}</td>
+            <td>{{o.type === '0' ? 'Delivery' : 'Pick-Up' }}</td>
+            <td>{{o.isnew === '0' ? 'Accepted' : 'New' }}</td>
+            <!-- <td class="td-extra"><a href="#">Edit</a></td> -->
+        </tr>
+    </table>
+</div>

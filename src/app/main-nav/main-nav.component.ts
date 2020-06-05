@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainNavComponent implements OnInit {
 
+  currentTab = 1;
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  tabclick(which: number) {
+    this.currentTab = which;
   }
 
 }
